@@ -229,7 +229,7 @@ function CustomNavbar() {
                             ></div>
 
                             {/* Drawer Side */}
-                            <div className={`fixed top-0 left-0 h-full w-full md:w-[80%] max-w-md bg-[#84C2DB] text-white transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                            <div className={`w-[90%] fixed top-0 left-0 h-full  max-w-md bg-[#84C2DB] text-white transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'} `}>
                                 <div className="flex pt-5 px-5 justify-between border-b border-[#585858] pb-6">
                                     <div>
                                         <h1 className="flex items-center gap-2">
@@ -246,12 +246,13 @@ function CustomNavbar() {
                                             className="text-4xl text-white cursor-pointer"
                                             onClick={closeDrawer}
                                         >
-                                            <RxCrossCircled className="text-red-700" />
+                                            
+                                            <p className="text-white text-4xl cursor-pointer" >X</p>
                                         </button>
                                     </div>
                                 </div>
-                                <div className="overflow-y-auto h-[calc(100vh-2px)] bg-[#659cb3] -mt-6 pt-4">
-                                    <ul className="pl-6 mt-0 space-y-2">
+                                <div className="overflow-y-auto h-[calc(100vh-2px)] bg-[#659cb3] -mt-6 pt-4 ">
+                                    <ul className="pl-6 mt-0 space-y-2 ">
                                         {mobileLinks}
                                     </ul>
                                 </div>
