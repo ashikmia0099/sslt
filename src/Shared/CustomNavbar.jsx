@@ -149,25 +149,25 @@ function CustomNavbar() {
                     </div>
                 </button>
             </li>
-            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Work') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/News') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><FaNetworkWired /></span>
-                <Link href="/components/Work">News</Link>
+                <Link href="/components/News">News</Link>
             </li>
-            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Process') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Gallary') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><VscServerProcess /></span>
-                <Link href="/components/Process">Gallary</Link>
+                <Link href="/components/Gallary">Gallary</Link>
             </li>
-            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/AboutUs') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Membership') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><TbArrowRoundaboutRight /></span>
-                <Link href="/components/AboutUs">Membership</Link>
+                <Link href="/components/Membership">Membership</Link>
             </li>
-            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/Homepages/home') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/About') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><FaNewspaper /></span>
-                <Link href="/components/Blogs">About Us</Link>
+                <Link href="/components/About">About Us</Link>
             </li>
-            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Careers') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Contact') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><GiLifeBar /></span>
-                <Link href="/components/Careers">Contact</Link>
+                <Link href="/components/Contact">Contact</Link>
             </li>
 
 
