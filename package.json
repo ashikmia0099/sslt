@@ -23,7 +23,7 @@
     "framer-motion": "^12.9.2",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.503.0",
-    "motion": "^12.9.4",
+    "motion": "^12.12.1",
     "next": "^15.4.0-canary.35",
     "react": "^18.2.0",
     "react-day-picker": "^8.10.1",

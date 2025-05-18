@@ -37,6 +37,11 @@ import { RiMedicineBottleFill } from 'react-icons/ri';
 
 
 
+import { HoverEffect } from "../../../../components/ui/card-hover-effect";
+
+
+import { MagicCard } from "../../../../components/magicui/magic-card";
+
 import { Montserrat } from 'next/font/google';
 
 // ✅ Load the font with explicit weight
@@ -47,25 +52,67 @@ const montserrat = Montserrat({
 
 
 
+export const projects = [
+    {
+        title: "Stripe",
+        description:
+            "A technology company that builds economic infrastructure for the internet.",
+        link: "https://stripe.com",
+    },
+    {
+        title: "Netflix",
+        description:
+            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+        link: "https://netflix.com",
+    },
+    {
+        title: "Google",
+        description:
+            "A multinational technology company that specializes in Internet-related services and products.",
+        link: "https://google.com",
+    },
+    {
+        title: "Meta",
+        description:
+            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+        link: "https://meta.com",
+    },
+    {
+        title: "Amazon",
+        description:
+            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+        link: "https://amazon.com",
+    },
+    {
+        title: "Microsoft",
+        description:
+            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+        link: "https://microsoft.com",
+    },
+];
+
+
 
 function Vission() {
+
+    // const { theme } = useTheme();
     return (
         <div className='bg-gradient-to-b from-[#000000]  to-[#000000] relative z-0'>
 
             <div>
-                <div className='  pt-32'>
+                <div className='mt-5 md:mt-10 lg:mt-32'>
 
                     {/* pagination section */}
                     <div className=''>
-                        <h1 className={`text-9xl font-extrabold uppercase leading-16 text-center `}>
+                        <h1 className={`text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-extrabold uppercase leading-16 text-center pt-20 `}>
                             <AuroraText>Our Vission</AuroraText>
                         </h1>
-                        <p className={`text-2xl font-semibold text-white text-center px-[20%] py-10 pt-20 ${montserrat.className}`}>
+                        <p className={`text-xl font-semibold text-white text-center px-5 lg:px-[25%] py-5 lg:py-10 ${montserrat.className}`}>
 
                             One Kajabi product works great. Two or more? That's when the magic happens.
                             Creators who blend our tools don't just expand their offerings—they amplify their results. See for yourself how the right mix could transform your vision into reality.
                         </p>
-                        <div className=" mt-10 pb-20 ml-60 ">
+                        <div className=" mt-10 pb-20 ml-0 md:ml-20 lg:ml-60 px-5 lg:px-0 ">
                             <Swiper
                                 style={{
                                     '--swiper-navigation-color': '#fff',
@@ -74,6 +121,18 @@ function Vission() {
                                 }}
                                 slidesPerView={4}          // Show center + half on each side
                                 // Center active slide
+                                breakpoints={{
+                                    0: {
+                                        slidesPerView: 1
+                                    },
+                                    640: {
+                                        slidesPerView: 2
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
+                                    },
+
+                                }}
                                 spaceBetween={20}            // Space between slides
                                 autoplay={{
                                     delay: 2500,
@@ -121,29 +180,32 @@ function Vission() {
                 </div>
 
                 {/* grid secion 1 */}
-                <div className='max-w-[1536px] mx-auto pb-32'>
-                    <div className=' grid grid-cols-2 justify-between py-20 gap-32'>
+                <div className='max-w-[1536px] mx-auto pb-14 md:pb-20 lg:pb-32'>
+
+                    <div className=' grid lg:grid-cols-2 justify-between py-6 lg:py-20 gap-10 lg:gap-32'>
                         {/* hadding text */}
-                        <div className=' mb-10'>
-                            <h1 className={`text-9xl font-extrabold uppercase leading-28 text-center `}>
-                                <AuroraText> <div className=' text-left'> <AuroraText>  Our Gols </AuroraText></div> <span className=' text-center'>And</span> <span>objectives</span></AuroraText>
+                        <div className=' mb-3 lg:mb-10'>
+                            <h1 className={` text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-extrabold uppercase leading-10  md:leading-14 lg:leading-16 xl:leading-28 text-center `}>
+                                <AuroraText> <div className=' text-center xl:text-left'> <AuroraText>  Our Gols </AuroraText></div> <span className=' text-center'>And</span><br /> <span>objectives</span></AuroraText>
                             </h1>
                         </div>
-                        <div className=' flex items-center justify-end pl-40'>
+                        <div className=' flex items-center justify-end pl-0 lg:pl-40 '>
                             <div className=' items-end right-1'>
-                                <p className={`text-2xl font-semibold text-white text-left ${montserrat.className}`}>
+                                <p className={` px-5 lg:px-0 text-xl lg:text-2xl font-semibold text-white text-center lg:text-left ${montserrat.className}`}>
 
                                     One Kajabi product works great. Two or more? That's when the magic happens.
                                     Creators who blend our tools don't just expand their offerings—they amplify their results. See for yourself how the right mix could transform your vision into reality.
                                 </p>
-                                <button className='btn h-14 px-6 shadow-2xs rounded-full mt-10  bg-[#84C2DB] border-none text-black text-lg font-bold flex items-center justify-center'>
-                                    Get Membership <span className='pt-1'><IoArrowForwardSharp /></span>
-                                </button>
+                                <div className=' hidden lg:block'>
+                                    <button className=' btn h-14 px-6 shadow-2xs rounded-full mt-10  bg-[#84C2DB] border-none text-black text-lg font-bold flex items-center justify-center'>
+                                        Get Membership <span className='pt-1'><IoArrowForwardSharp /></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* <div className=' grid grid-cols-4 gap-x-10 gap-y-10'>
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                    <div className=' grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10 px-5 lg:px-0'>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
                                 <FaBookMedical />
                             </p>
@@ -157,11 +219,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <FaHandHoldingMedical />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -173,11 +234,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <FaUserDoctor />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -189,11 +249,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <GiPlagueDoctorProfile />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -205,11 +264,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <GiMedicines />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -221,11 +279,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <RiMedicineBottleFill />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -237,11 +294,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <FaSnowboarding />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -253,11 +309,10 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
-
-                        <CardSpotlight className="h-96 w-full shadow-lg shadow-[#84C2DB]">
+                        </div>
+                        <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
-                                <FaHouseMedicalCircleCheck />
+                                <FaBookMedical />
                             </p>
                             <div className="text-neutral-200 mt-4 relative z-20 text-2xl font-semibold">
                                 Follow these steps to your account:
@@ -269,12 +324,16 @@ function Vission() {
                                 information and data is properly secured helps protect your personal
                                 information and data.
                             </p>
-                        </CardSpotlight>
+                        </div>
 
-
-
-
-                    </div> */}
+                    </div>
+                   <div className=' block lg:hidden'>
+                     <div className=' flex items-center justify-center mt-6'>
+                        <button className=' btn h-14 px-6 shadow-2xs rounded-full mt-10  bg-[#84C2DB] border-none text-black text-lg font-bold flex items-center justify-center'>
+                            Get Membership <span className='pt-1'><IoArrowForwardSharp /></span>
+                        </button>
+                    </div>
+                   </div>
                 </div>
             </div>
 

@@ -90,35 +90,35 @@ function CustomNavbar() {
     const links = (
         <>
 
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm  font-semibold ${isActive('/') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/">Home</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold relative ${isActive("/components/Services") ? "text-[#84C2DB]" : "text-black"} ${isOpen ? "text-[#84C2DB]" : "text-black"}`}>
-                <button onClick={() => setIsOpen(!isOpen)} className="xl:text-lg lg:text-[16px] text-lg font-semibold" >
-                    <span>Resources</span> <span> <IoIosArrowDown className={`text-2xl mt-1 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`} /></span>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold relative ${isActive("/components/Services") ? "text-[#84C2DB]" : "text-black"} ${isOpen ? "text-[#84C2DB]" : "text-black"}`}>
+                <button onClick={() => setIsOpen(!isOpen)} className="2xl:text-lg lg:text-[12px] xl:text-sm font-semibold" >
+                    <span>Resources</span> <span> <IoIosArrowDown className={`2xl:text-lg lg:text-[12px] xl:text-sm mt-1 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`} /></span>
                 </button>
 
             </li>
-           
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/News') ? 'text-[#84C2DB]' : 'text-black'}`}>
+
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/News') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/News">News & Updates</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/Gallary') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/Gallary') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/Gallary">Gallary</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/Membership') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/Membership') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/Membership">Membership</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/About') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/About') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/About">About Us</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/Contact') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/Contact') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/Contact">Contact</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/components/Details') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/components/Details') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/components/Details">Details</Link>
             </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/Deshboard') ? 'text-[#84C2DB]' : 'text-black'}`}>
+            <li className={`2xl:text-lg lg:text-[12px] xl:text-sm font-semibold ${isActive('/Deshboard') ? 'text-[#84C2DB]' : 'text-black'}`}>
                 <Link href="/Deshboard">Deshboard</Link>
             </li>
 
@@ -132,45 +132,44 @@ function CustomNavbar() {
 
         <>
 
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><FaHome /></span>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3  items-center border-b border-[#585858] pb-4 ${isActive('/') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className=" text-lg md:text-2xl"><FaHome /></span>
                 <Link href="/">Home</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Services') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><MdOutlineMiscellaneousServices /></span>
-                <Link href="/components/Services">Services</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Services') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><MdOutlineMiscellaneousServices /></span>
+                <button onClick={() => setIsOpen(!isOpen)} className="2xl:text-lg lg:text-[12px] xl:text-sm font-semibold flex items-center justify-between" >
+                    <div className=" flex items-center gap-x-44">
+                        <div>
+                            <span>Resources</span>
+                        </div> 
+                        <div>
+                            <span> <IoIosArrowDown className={`2xl:text-lg lg:text-[12px] xl:text-sm mt-1 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`} /></span>
+                        </div>
+                    </div>
+                </button>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Work') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><FaNetworkWired /></span>
-                <Link href="/components/Work">Work</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Work') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><FaNetworkWired /></span>
+                <Link href="/components/Work">News</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Process') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><VscServerProcess /></span>
-                <Link href="/components/Process">Process</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Process') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><VscServerProcess /></span>
+                <Link href="/components/Process">Gallary</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/AboutUs') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><TbArrowRoundaboutRight /></span>
-                <Link href="/components/AboutUs">About</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/AboutUs') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><TbArrowRoundaboutRight /></span>
+                <Link href="/components/AboutUs">Membership</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/Homepages/home') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><FaNewspaper /></span>
-                <Link href="/components/Blogs">Blogs</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/Homepages/home') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><FaNewspaper /></span>
+                <Link href="/components/Blogs">About Us</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Careers') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><GiLifeBar /></span>
-                <Link href="/components/Careers">Careers</Link>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Careers') ? 'text-[#84C2DB]' : 'text-white'}`}>
+                <span className="text-lg md:text-2xl"><GiLifeBar /></span>
+                <Link href="/components/Careers">Contact</Link>
             </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/ContactUs') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><RiContactsBook3Fill /></span>
-                <Link href="/components/ContactUs">Contact Us</Link>
-            </li>
-            <li className={`text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Notifications') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <span className="text-2xl"><IoNotifications /></span>
-                <Link href="/components/Notifications">Notifications</Link>
-            </li>
-            <li className={`xl:text-lg lg:text-[16px] text-lg font-semibold ${isActive('/dashboard') ? 'text-[#84C2DB]' : 'text-white'}`}>
-                <Link href="/dashboard">Dashboard</Link>
-            </li>
+
 
 
         </>
@@ -183,22 +182,22 @@ function CustomNavbar() {
 
 
     return (
-        <div className="sticky top-5 z-40 ">
-            <div className="navbar max-w-[1596px] h-24 mx-auto bg-white/60 backdrop-blur-sm rounded-3xl">
+        <div className="sticky top-0 lg:top-5 z-40 ">
+            <div className="navbar max-w-[1596px] h-14 md:h-16 lg:20 xl:h-24 mx-auto bg-white/60 backdrop-blur-sm rounded-none lg:rounded-3xl">
                 <div className="navbar-start">
                     <Link href="/">
                         <h1 className="flex items-center gap-2">
                             <span className="text-lg md:text-3xl font-extrabold text-[#A259FF]">
-                                <Image src={ssllogo} className=" h-10 w-10 lg:h-14 lg:w-14 rounded-full"></Image>
+                                <Image src={ssllogo} className=" h-10 w-10 xl:h-14 xl:w-14 rounded-full"></Image>
                             </span>
-                            <span className="font-bold text-[14px] md:text-2xl text-black block lg:hidden xl:block">
-                               SSLT
+                            <span className="font-bold text-[14px] md:text-2xl text-black block ">
+                                SSLT
                             </span>
                         </h1>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-3 lg:gap-2 xl:gap-3">{links}</ul>
+                    <ul className="menu menu-horizontal px-1 gap-3 lg:gap-1 xl:gap-3">{links}</ul>
                 </div>
 
                 <div className="navbar-end">
@@ -207,18 +206,18 @@ function CustomNavbar() {
 
 
                         <Link href={"/components/Auth"}>
-                            <button className="btn text-black bg-[#84C2DB] rounded-full h-10 px-5 xl:h-14 text-lg font-medium border-none shadow-2xs">
-                                <span>Member Login</span> 
+                            <button className="btn text-black bg-[#84C2DB] rounded-full h-10 px-5 xl:h-12 2xl:text-lg lg:text-[12px] xl:text-sm font-medium border-none shadow-2xs">
+                                <span>Member Login</span>
                             </button>
                         </Link>
 
                     </div>
                     <div className="dropdown">
                         <button
-                            className="btn bg-[#9dff00bb] shadow-2xs border-none lg:hidden"
+                            className="btn bg-[#84C2DB] shadow-2xs border-none lg:hidden"
                             onClick={toggleDrawer}
                         >
-                            <RiMenu2Line className="text-2xl text-white" />
+                            <RiMenu2Line className="text-2xl text-black" />
                         </button>
 
                         {/* Drawer with Animation */}
@@ -230,14 +229,14 @@ function CustomNavbar() {
                             ></div>
 
                             {/* Drawer Side */}
-                            <div className={`fixed top-0 left-0 h-full w-full md:w-[80%] max-w-md bg-[#131212] text-white transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                            <div className={`fixed top-0 left-0 h-full w-full md:w-[80%] max-w-md bg-[#84C2DB] text-white transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                                 <div className="flex pt-5 px-5 justify-between border-b border-[#585858] pb-6">
                                     <div>
                                         <h1 className="flex items-center gap-2">
                                             <span className="text-lg md:text-3xl font-extrabold text-[#A259FF]">
                                                 <Image src={ssllogo} className=" h-10 w-10 rounded-full"></Image>
                                             </span>
-                                            <span className="font-bold text-[14px] md:text-2xl text-black  block">
+                                            <span className="font-bold text-[14px] md:text-2xl text-white  block">
                                                 SSLT
                                             </span>
                                         </h1>
@@ -251,8 +250,8 @@ function CustomNavbar() {
                                         </button>
                                     </div>
                                 </div>
-                                <div className="overflow-y-auto h-[calc(100vh-80px)] bg-[#2B2B2B]">
-                                    <ul className="pl-6 mt-5 space-y-2">
+                                <div className="overflow-y-auto h-[calc(100vh-2px)] bg-[#659cb3] -mt-6 pt-4">
+                                    <ul className="pl-6 mt-0 space-y-2">
                                         {mobileLinks}
                                     </ul>
                                 </div>

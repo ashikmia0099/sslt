@@ -112,14 +112,6 @@ function WhatDoctorSay() {
         <div>
             {/* marques section */}
             <div>
-                {/* <h1 className="text-6xl text-center font-bold uppercase pt-24 pb-6 ">
-
-                    <AuroraText className="text-6xl border-b-2 w-[45%] mx-auto pb-4 leading-20">
-                        What Our Mission And Vission
-                    </AuroraText>
-
-
-                </h1> */}
                 <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
                     <Marquee pauseOnHover className="[--duration:20s]">
                         {firstRow.map((review) => (
@@ -135,10 +127,6 @@ function WhatDoctorSay() {
                     <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 px-5"></div>
                 </div>
             </div>
-
-            {/* banner secion */}
-
-
            
         </div>
     );

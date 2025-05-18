@@ -30,7 +30,17 @@ function Banner2() {
     return (
         <div className='mx-auto pt-10'>
             <Swiper
-                slidesPerView={5}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }}
                 spaceBetween={30}
                 loop={true}
                 freeMode={true}
