@@ -107,12 +107,12 @@ function Vission() {
                         <h1 className={`text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-extrabold uppercase leading-16 text-center pt-20 `}>
                             <AuroraText>Our Vission</AuroraText>
                         </h1>
-                        <p className={`text-xl font-semibold text-white text-center px-5 lg:px-[25%] py-5 lg:py-10 ${montserrat.className}`}>
+                        <p className={`text-xl font-semibold text-white text-center px-5 lg:px-[10%] xl:px-[15%] 2xl:px-[25%] py-5 lg:py-10 ${montserrat.className}`}>
 
                             One Kajabi product works great. Two or more? That's when the magic happens.
                             Creators who blend our tools don't just expand their offerings—they amplify their results. See for yourself how the right mix could transform your vision into reality.
                         </p>
-                        <div className=" mt-10 pb-20 ml-0 md:ml-20 lg:ml-60 px-5 lg:px-0 ">
+                        <div className=" mt-10 pb-20 ml-0 md:ml-20 lg:ml-20 xl:40 2xl:ml-60 px-5 lg:px-0 ">
                             <Swiper
                                 style={{
                                     '--swiper-navigation-color': '#fff',
@@ -130,6 +130,9 @@ function Vission() {
                                     },
                                     1024: {
                                         slidesPerView: 3,
+                                    },
+                                    1440: {
+                                        slidesPerView: 4,
                                     },
 
                                 }}
@@ -182,16 +185,16 @@ function Vission() {
                 {/* grid secion 1 */}
                 <div className='max-w-[1536px] mx-auto pb-14 md:pb-20 lg:pb-32'>
 
-                    <div className=' grid lg:grid-cols-2 justify-between py-6 lg:py-20 gap-10 lg:gap-32'>
+                    <div className=' grid lg:grid-cols-2 justify-between  py-6 lg:py-20 gap-10 lg:gap-16 xl:text-20 2xl:gap-32'>
                         {/* hadding text */}
                         <div className=' mb-3 lg:mb-10'>
-                            <h1 className={` text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-extrabold uppercase leading-10  md:leading-14 lg:leading-16 xl:leading-28 text-center `}>
+                            <h1 className={` pt-0 lg:pt-16 xl:pt-0 text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold uppercase leading-10  md:leading-14 lg:leading-16 xl:leading-28 text-center `}>
                                 <AuroraText> <div className=' text-center xl:text-left'> <AuroraText>  Our Gols </AuroraText></div> <span className=' text-center'>And</span><br /> <span>objectives</span></AuroraText>
                             </h1>
                         </div>
-                        <div className=' flex items-center justify-end pl-0 lg:pl-40 '>
+                        <div className=' flex items-center justify-end pl-0 lg:pl-20 xl:pl-28 2xl:pl-40 '>
                             <div className=' items-end right-1'>
-                                <p className={` px-5 lg:px-0 text-xl lg:text-2xl font-semibold text-white text-center lg:text-left ${montserrat.className}`}>
+                                <p className={`  px-5 xl:px-0 text-xl 2xl:text-2xl font-semibold text-white text-center lg:text-left ${montserrat.className}`}>
 
                                     One Kajabi product works great. Two or more? That's when the magic happens.
                                     Creators who blend our tools don't just expand their offerings—they amplify their results. See for yourself how the right mix could transform your vision into reality.
@@ -204,7 +207,7 @@ function Vission() {
                             </div>
                         </div>
                     </div>
-                    <div className=' grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10 px-5 lg:px-0'>
+                    <div className=' grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10 px-5 2xl:px-0'>
                         <div className=" w-full p-10 shadow-lg shadow-[#84C2DB] rounded-lg">
                             <p className="text-5xl font-bold relative z-20 mt-2 text-[#84C2DB]">
                                 <FaBookMedical />

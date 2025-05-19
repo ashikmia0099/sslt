@@ -28,7 +28,7 @@ function Banner2() {
     if (!isClient) return null // prevents SSR crash
 
     return (
-        <div className='mx-auto pt-10'>
+        <div className='mx-auto pt-10 xl:pt-16'>
             <Swiper
                 breakpoints={{
                     0: {
@@ -39,6 +39,9 @@ function Banner2() {
                     },
                     1024: {
                         slidesPerView: 3,
+                    },
+                    1440: {
+                        slidesPerView: 4,
                     },
                 }}
                 spaceBetween={30}

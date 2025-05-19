@@ -43,30 +43,55 @@ function Questions() {
                         <div className="join join-vertical bg-white w-full">
                             <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl lg:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
-                                <div className="collapse-content text-[12px] md:text-sm lg:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
                             </div>
                             <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl lg:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi fully researched infomediaries?</div>
-                                <div className="collapse-content text-[12px] md:text-sm lg:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
                             </div>
                             <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl lg:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
-                                <div className="collapse-content text-[12px] md:text-sm lg:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
                             </div>
                             <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl lg:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
-                                <div className="collapse-content text-[12px] md:text-sm lg:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
                             </div>
                             <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
                                 <input type="radio" name="my-accordion-4" defaultChecked />
-                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl lg:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
-                                <div className="collapse-content text-[12px] md:text-sm lg:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
                             </div>
-                            
+                            <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
+                                <input type="radio" name="my-accordion-4" defaultChecked />
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                            </div>
+                            <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
+                                <input type="radio" name="my-accordion-4" defaultChecked />
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                            </div>
+                            <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
+                                <input type="radio" name="my-accordion-4" defaultChecked />
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                            </div>
+                            <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
+                                <input type="radio" name="my-accordion-4" defaultChecked />
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                            </div>
+                            <div className="collapse collapse-plus join-item border-black border-b-2 w-full p-0">
+                                <input type="radio" name="my-accordion-4" defaultChecked />
+                                <div className={`collapse-title p-0 font-bold text-[16px] md:text-xl  2xl:text-2xl pt-5 ${montserrat.className}`}>What is Kajabi?</div>
+                                <div className="collapse-content text-[12px] md:text-sm 2xl:text-lg font-semibold">Synergistically productivate fully researched infomediaries rather than distinctive growth strategies. Compellingly facilitate an expanded array of innovation whereas team building systems. Competently brand scalable metrics for dynamic infrastructures. Collaboratively integrate turnkey scenarios before.</div>
+                            </div>
+                           
                             
                             
                         </div>

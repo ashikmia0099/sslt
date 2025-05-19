@@ -15,180 +15,64 @@ function Resources() {
           <div className="relative h-screen overflow-hidden">
             {/* Fixed Header */}
             <div className="absolute top-0 left-0 right-0 bg-white z-10">
-              <h1 className="text-3xl font-bold text-black border-b-2 border-black pb-2.5 uppercase px-4 pt-4">
+              <h1 className=" lg:text-xl xl:text-2xl  font-bold text-black border-b-2 border-black pb-2.5 uppercase px-4 pt-4">
                 Build & Launch
               </h1>
             </div>
 
             {/* Scrollable Area */}
             <div className="absolute top-[80px] bottom-0 left-0 right-0 overflow-y-auto px-4 pr-6 pt-4">
-              <div className="join join-vertical bg-white">
+              <div className="join join-vertical bg-white ">
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
               
 
               </div>
@@ -200,180 +84,64 @@ function Resources() {
           <div className="relative h-screen overflow-hidden">
             {/* Fixed Header */}
             <div className="absolute top-0 left-0 right-0 bg-white z-10">
-              <h1 className="text-3xl font-bold text-black border-b-2 border-black pb-2.5 uppercase px-4 pt-4">
-              The Global and National Context
+              <h1 className="lg:text-xl xl:text-2xl font-bold text-black border-b-2 border-black pb-2.5 uppercase px-4 pt-4">
+              The Global and National 
               </h1>
             </div>
 
             {/* Scrollable Area */}
             <div className="absolute top-[80px] bottom-0 left-0 right-0 overflow-y-auto px-4 pr-6 pt-4">
-              <div className="join join-vertical bg-white">
+              <div className="join join-vertical bg-white ">
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
                 <div className="collapse collapse-arrow join-item ">
                   <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
+                  <div className="collapse-title font-bold text-black lg:text-sm xl:text-[16px]  2xl:text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' lg:sm xl:text-[16px] 2xl:text-3xl' /></span> <span className=' px-2.5'>The Evolution of Communication</span></div>
                   <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
+                    <ol className=' lg:text-[10px] xl:text-sm 2xl:text-lg   font-semibold flex items-center gap-3'> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold'>1.</span> <span className=' lg:text-[10px] xl:text-sm 2xl:text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
+                    
 
                   </div>
                 </div>
               
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-xl leading-7 flex items-center gap-3 p-1" ><span><SiAsciidoctor className=' text-3xl' /></span> <span className=' '>Addressing Gaps in Training, Professional Development</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
-              
-                <div className="collapse collapse-arrow join-item ">
-                  <input type="radio" name="my-accordion-4" defaultChecked />
-                  <div className="collapse-title font-bold text-black text-2xl leading-7 flex items-center gap-2 p-1" ><span><FaUserDoctor className=' text-3xl' /></span> <span>The Evolution of Communication</span></div>
-                  <div className="collapse-content text-sm text-black space-y-2">
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>1.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Benefits for SSLT Student Members</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>2.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Teacher treading</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>3.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>The Formation of SSLT: A Response to Emerging Needs</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>4.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Vision, Mission, and Objectives</span></ol>
-                    <ol className=' text-xl font-semibold flex items-center gap-3'> <span className=' text-2xl font-semibold'>5.</span> <span className=' text-lg font-semibold hover:text-blue-600  hover:border-b border-blue-700 pr-3 pt-1'>Membership Benefits for General Members</span></ol>
-
-                  </div>
-                </div>
               
 
               </div>
