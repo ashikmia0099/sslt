@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useContext, useState } from "react";
 import { IoNotificationsSharp, IoChatbubbleEllipses, IoNotifications } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
-import { FaRegUserCircle, FaHome, FaNetworkWired, FaNewspaper, FaThList } from "react-icons/fa";
+import { FaRegUserCircle, FaHome, FaNetworkWired, FaNewspaper, FaThList, FaList } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 import { RiMenu2Line, RiContactsBook3Fill } from "react-icons/ri";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
@@ -21,16 +21,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 // shadcn data
 
 import {
-    Drawer,
-    DrawerClose,
-    DrawerContent,
-    DrawerDescription,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerTitle,
-    DrawerTrigger,
-
-} from "@/components/ui/drawer"
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "../components/ui/accordion"
 
 
 import { Button } from "@/components/ui/button"
@@ -42,10 +37,12 @@ function CustomNavbar() {
 
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-      const [resoursedropdown, setresoursedropdown] = useState(false);
+    const [resoursedropdown, setresoursedropdown] = useState(false);
     const pathname = usePathname();
     const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
+    const [blogsDropdown, setBlogsDropdown] = useState(false);
+    const [blogsDropdownsecond, setblogsDropdownsecond] = useState(false);
 
 
     const toggleDrawer = () => {
@@ -64,14 +61,14 @@ function CustomNavbar() {
     };
 
 
-    
-      const menuItemClass = (active) =>
-        `text-lg font-semibold flex gap-3 items-center  pb-4 ${active ? "text-[#9EFF00]" : "text-white"}`;
-    
-      const renderDropdownIcon = (open) =>
+
+    const menuItemClass = (active) =>
+        `text-lg font-semibold gap-3 pb-4 ${active ? "text-[#9EFF00]" : "text-white"}`;
+
+    const renderDropdownIcon = (open) =>
         <IoIosArrowDown className={`text-2xl transition-transform ${open ? "rotate-180" : "rotate-0"}`} />;
-    
-    
+
+
 
 
 
@@ -128,47 +125,196 @@ function CustomNavbar() {
                 <span className="text-lg md:text-2xl"><FaHome /></span>
                 <Link href="/" onClick={closeDrawer}>Home</Link>
             </li>
-            {/* <li
-                className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Services') ? 'text-[#84C2DB]' : 'text-white'
-                    }`}
-            >
-                <span className="text-lg md:text-2xl">
-                    <MdOutlineMiscellaneousServices />
-                </span>
 
-              
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="flex items-center justify-between w-full pr-5"
-                >
-                    <span className="text-start">Resources</span>
-                    <IoIosArrowDown
-                        className={`2xl:text-lg lg:text-[12px] xl:text-sm mt-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'
-                            }`}
-                    />
-                </button>
-            </li> */}
 
-            <li className={`flex-col gap-3 py-2 text-sm md:text-lg font-semibold items-center border-b border-[#585858] pb-4 ${menuItemClass(false)}`}>
+            <li className={`flex-col gap-3 py-2 text-sm md:text-lg font-semibold  border-b border-[#585858] pb-4 ${menuItemClass(false)}`}>
                 <div className="flex items-center justify-between cursor-pointer w-full" onClick={() => setresoursedropdown(!resoursedropdown)}>
-                    <div className="flex items-center gap-1">
-                        <span className="text-2xl "><MdOutlineMiscellaneousServices /></span>
+                    <div className="flex items-center gap-1 ">
+                        <span className="text-lg md:text-2xl "><MdOutlineMiscellaneousServices /></span>
                         <span>Resources</span>
                     </div>
                     {renderDropdownIcon(resoursedropdown)}
                 </div>
                 {resoursedropdown && (
-                    <ul className="ml-6 mt-2  border-gray-500 pl-4">
-                        {/* <li className={menuItemClass(false)}>
-                            <span className="text-2xl"><FaThList /></span>
-                            <Link href="/dashboard/DashboardAbout/AboutDataList">All Genearal Mambership List</Link>
-                        </li>
-                        <li className={menuItemClass(false)}>
-                            <span className="text-2xl"><FaThList /></span>
-                            <Link href="/dashboard/DashboardAbout/AboutBannerList">Genearal Mambership Post List</Link>
-                        </li> */}
+                    <div className="ml-1 mt-2  border-gray-500 pl-0">
 
-                    </ul>
+                        <li className={`flex-col gap-3 py-2  ${menuItemClass(false)}`}>
+                            <div className="" onClick={() => setBlogsDropdown(!blogsDropdown)}>
+                                <div className="flex justify-between cursor-pointer w-full pl-4 pr-2 ">
+                                    <div className=" text-left">
+                                        <p className="text-[12px] text-left text-black">Build & Launch</p>
+                                    </div>
+                                    <div>
+                                        <IoIosArrowDown
+                                            className={`2xl:text-lg lg:text-[12px] xl:text-sm text-black mt-1 transition-transform duration-300  ${isOpen ? 'rotate-180' : 'rotate-0'
+                                                }`} />
+                                    </div>
+                                </div>
+                            </div>
+                            {blogsDropdown && (
+                                <ul className=" mt-2  border-gray-500 pl-4">
+                                   
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+
+                                </ul>
+                            )}
+                        </li>
+
+                        <li className={`flex-col gap-3 py-2  ${menuItemClass(false)}`}>
+                            <div className="" onClick={() => setblogsDropdownsecond(!blogsDropdownsecond)}>
+                                <div className="flex justify-between cursor-pointer w-full pl-4 pr-2 ">
+                                    <div className=" text-left">
+                                        <p className="text-[12px] text-left text-black">This is & Launch</p>
+                                    </div>
+                                    <div>
+                                        <IoIosArrowDown
+                                            className={`2xl:text-lg lg:text-[12px] xl:text-sm text-black mt-1 transition-transform duration-300  ${isOpen ? 'rotate-180' : 'rotate-0'
+                                                }`} />
+                                    </div>
+                                </div>
+                            </div>
+                            {blogsDropdownsecond && (
+                                <ul className=" mt-2  border-gray-500 pl-4">
+                                   
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <Accordion type="single" collapsible>
+                                        <AccordionItem value="item-1 " className="px-2">
+                                            <AccordionTrigger className="text-[12px] text-[#282525]">Is it accessible?</AccordionTrigger>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                            <AccordionContent className="px-2">
+                                                <Link href="/dashboard/DashboardBlogs/AllCategory" className=" text-[#282525] text-[10px]"> <span>1.</span> <span>All Mambership List</span></Link>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </ul>
+                            )}
+                        </li>
+                    </div>
                 )}
             </li>
 
@@ -176,10 +322,10 @@ function CustomNavbar() {
                 <span className="text-lg md:text-2xl"><FaNetworkWired /></span>
                 <Link href="/components/News" onClick={closeDrawer}>News</Link>
             </li>
-            {/* <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Gallery') ? 'text-[#84C2DB]' : 'text-white'}`}>
+            <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Gallery') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><VscServerProcess /></span>
                 <Link href="/components/Gallery" onClick={closeDrawer}>Gallery</Link>
-            </li> */}
+            </li>
             <li className={`text-sm md:text-lg font-semibold flex gap-3 items-center border-b border-[#585858] pb-4 ${isActive('/components/Membership') ? 'text-[#84C2DB]' : 'text-white'}`}>
                 <span className="text-lg md:text-2xl"><TbArrowRoundaboutRight /></span>
                 <Link href="/components/Membership" onClick={closeDrawer}>Membership</Link>
