@@ -47,7 +47,7 @@ function Sidebar() {
 
   return (
     <div className="bg-[#191919] h-full ">
-      <div className="max-w-[1596px] mx-auto ">
+      <div className="max-w-[1596px] ">
 
         {/* Login logout users */}
 
@@ -84,13 +84,12 @@ function Sidebar() {
             <ul className="ml-6 mt-2  border-gray-500 pl-4">
               <li className={menuItemClass(false)}>
                 <span className="text-2xl"><FaThList /></span>
-                <Link href="/dashboard/DashboardAbout/AboutDataList">All Genearal Mambership List</Link>
+                <Link href="/Deshboard/DeshboardGeneralMambership/DeshboardGeneralMambershipList">All Genearal Mambership List</Link>
               </li>
               <li className={menuItemClass(false)}>
                 <span className="text-2xl"><FaThList /></span>
-                <Link href="/dashboard/DashboardAbout/AboutBannerList">Genearal Mambership Post List</Link>
+                <Link href="/Deshboard/DeshboardGeneralMambership/DeshboardNewGeneralMambershipList">New Genearal Mambership List</Link>
               </li>
-
             </ul>
           )}
         </li>
@@ -108,13 +107,13 @@ function Sidebar() {
             <ul className=" mt-2  border-gray-500 pl-4">
               <li className={`${menuItemClass(isActive('/dashboard/DashboardBlogs/AllBlogs'))} xl:text-lg lg:text-[16px]`}>
                 <span className="text-2xl"><FaList /></span>
-                <Link href="/dashboard/DashboardBlogs/AllCategory">All Student Mambership List</Link>
+                <Link href="/Deshboard/DeshboardStudentMambership/DeshboardStudentMambershipList">All Student Mambership List</Link>
               </li>
               <li className={`${menuItemClass(isActive('/dashboard/DashboardBlogs/AllBlogs'))} xl:text-lg lg:text-[16px]`}>
                 <span className="text-2xl"><FaList /></span>
-                <Link href="/dashboard/DashboardBlogs/AllBlogs">Student Mambership Form</Link>
+                <Link href="/Deshboard/DeshboardStudentMambership/DeshboardNewStudentMambershipList">New Student Mambership List</Link>
               </li>
-
+             
             </ul>
           )}
         </li>
@@ -352,13 +351,9 @@ function Sidebar() {
                 <span className="text-2xl"><FaFileWaveform /></span>
                 <Link href="/dashboard/DashboardShared/Frequently_Asked_Questions_Form">Frequently Asked Questions</Link>
               </li>
-
-
             </ul>
           )}
         </li>
-
-
       </div>
     </div>
   );

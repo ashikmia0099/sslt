@@ -4,6 +4,7 @@ import ssllogo from '../../public/images/ssltLogo.jpg'
 import Image from 'next/image'
 import { FaArrowRight, FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaLocationDot, FaXTwitter } from 'react-icons/fa6'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -23,9 +24,11 @@ function Footer() {
                             <h1 className='text-6xl text-[#84C2DB] font-bold uppercase leading-16'>
                                 Join Our Worldclass Community
                             </h1>
-                            <button className='btn text-2xl mt-5 rounded-full border-none bg-[#84C2DB] text-black'>
-                                Get Membership <FaArrowRight />
-                            </button>
+                            <Link href="/Membership">
+                                <button className='btn text-2xl mt-5 rounded-full border-none bg-[#84C2DB] text-black'>
+                                    Get Membership <FaArrowRight />
+                                </button>
+                            </Link>
                             <p className='text-xl font-bold text-white mt-3'>
                                 By proceeding you agree to our Platform Terms & Privacy Notice.
                             </p>
@@ -51,7 +54,7 @@ function Footer() {
                                 <h1 className='text-3xl font-bold text-white pb-3'>Features</h1>
                                 <ul className='pl-2 space-y-1.5'>
                                     {['Resources', 'News and Update', 'Practices Area', 'Membership', 'About Us', 'Contact'].map((item, idx) => (
-                                        <li key={idx} className='text-xl font-medium text-[#585757]'>{item}</li>
+                                        <li key={idx} className='text-xl font-medium text-[#ffffff]'>{item}</li>
                                     ))}
                                 </ul>
                             </div>
